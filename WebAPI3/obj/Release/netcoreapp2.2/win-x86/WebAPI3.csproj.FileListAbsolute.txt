@@ -1,0 +1,17 @@
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\bin\Release\netcoreapp2.2\win-x86\hostpolicy.dll
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\bin\Release\netcoreapp2.2\win-x86\hostfxr.dll
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\bin\Release\netcoreapp2.2\win-x86\WebAPI3.exe
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\bin\Release\netcoreapp2.2\win-x86\WebAPI3.deps.json
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\bin\Release\netcoreapp2.2\win-x86\WebAPI3.runtimeconfig.json
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\bin\Release\netcoreapp2.2\win-x86\WebAPI3.runtimeconfig.dev.json
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\bin\Release\netcoreapp2.2\win-x86\WebAPI3.dll
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\bin\Release\netcoreapp2.2\win-x86\WebAPI3.pdb
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\obj\Release\netcoreapp2.2\win-x86\WebAPI3.csprojAssemblyReference.cache
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\obj\Release\netcoreapp2.2\win-x86\WebAPI3.csproj.CoreCompileInputs.cache
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\obj\Release\netcoreapp2.2\win-x86\WebAPI3.RazorAssemblyInfo.cache
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\obj\Release\netcoreapp2.2\win-x86\WebAPI3.RazorAssemblyInfo.cs
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\obj\Release\netcoreapp2.2\win-x86\WebAPI3.AssemblyInfoInputs.cache
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\obj\Release\netcoreapp2.2\win-x86\WebAPI3.AssemblyInfo.cs
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\obj\Release\netcoreapp2.2\win-x86\WebAPI3.RazorTargetAssemblyInfo.cache
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\obj\Release\netcoreapp2.2\win-x86\WebAPI3.dll
+C:\Users\bthnd\source\repos\WebAPI3\WebAPI3\obj\Release\netcoreapp2.2\win-x86\WebAPI3.pdb
