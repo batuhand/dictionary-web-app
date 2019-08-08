@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebAPI3.Models;
@@ -19,7 +20,7 @@ namespace WebAPI3.Controllers
         }
 
         // GET: api/Word
-        [HttpGet]
+        [HttpGet,Authorize]
         public IEnumerable<WordList> GetWords()
         {
             return _repository.GetAllItems().Take(100);
@@ -38,7 +39,7 @@ namespace WebAPI3.Controllers
         //    return Ok(item);
         //}
 
-        [HttpGet("{Id}")]
+        [HttpGet("{Id}"),Authorize]
         public ObjectResult GetWord([FromRoute] string id)
         {
             var item = _repository.GetWordByTr(id);

@@ -41,6 +41,8 @@ namespace WebAPI3
             services.AddMvc();
             services.AddDbContext<wordContext>(options =>
                 options.UseSqlServer(ConnectionString));
+            services.AddDbContext<dictUserContext>(options =>
+            options.UseSqlServer(""));
 
             //Entity Framework  
             //    services.AddDbContext<WordContext>(options => options.UseSqlServer(ConnectionString));

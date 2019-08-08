@@ -18,7 +18,7 @@ namespace WebAPI3.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=tcp:shop-db2.database.windows.net,1433;Initial Catalog=word;Persist Security Info=False;User ID=batuhand;Password=Bthn1236540321;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+                optionsBuilder.UseSqlServer("");
             }
         }
 
