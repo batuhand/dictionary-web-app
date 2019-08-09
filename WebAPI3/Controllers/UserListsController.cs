@@ -10,7 +10,9 @@ using WebAPI3.Models;
 
 namespace WebAPI3.Controllers
 {
-    public class UserListsController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UserListsController : ControllerBase
     {
         private readonly dictUserContext _context;
 
@@ -19,42 +21,30 @@ namespace WebAPI3.Controllers
             _context = context;
         }
 
-        // GET: UserLists
-        [Authorize]
-        public IEnumerable<UserList> GetUsers()
+        // GET: api/UserLists
+        [HttpGet,Authorize]
+        public IEnumerable<UserList> Get()
         {
             return _context.UserList.ToList();
         }
 
-        // GET: UserLists/Details/5
-        [Authorize]
-        public async Task<IActionResult> Details(int? id)
+        // GET: api/UserLists/5
+        [HttpGet("{id}"),Authorize]
+        public IEnumerable<UserList> GetUser(string id)
         {
-            if (id == null)
+            List<UserList> list = new List<UserList>();
+            UserList user = _context.UserList.FirstOrDefault(cus => cus.UserName == id);
+            if (user != null)
             {
-                return NotFound();
+                list.Add(user);
             }
-
-            var userList = await _context.UserList
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (userList == null)
-            {
-                return NotFound();
-            }
-
-            return Ok();
-        }
-
-        // GET: UserLists/Create
-        public IActionResult Create()
-        {
-            return View();
+            return list;
         }
 
         // POST: UserLists/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost,Route("create"),Authorize]
         public async Task<IActionResult> Create([FromBody] UserList userList)
         {
             if (ModelState.IsValid)
@@ -63,7 +53,7 @@ namespace WebAPI3.Controllers
                 await _context.SaveChangesAsync();
                 return Ok();
             }
-            return View(userList);
+            return Ok(userList);
         }
 
         // GET: UserLists/Edit/5
@@ -79,7 +69,7 @@ namespace WebAPI3.Controllers
             {
                 return NotFound();
             }
-            return View(userList);
+            return Ok(userList);
         }
 
         // POST: UserLists/Edit/5
@@ -114,7 +104,7 @@ namespace WebAPI3.Controllers
                 }
                 return Ok();
             }
-            return View(userList);
+            return Ok(userList);
         }
 
         // GET: UserLists/Delete/5

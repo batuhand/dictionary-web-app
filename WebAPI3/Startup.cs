@@ -86,7 +86,7 @@ namespace WebAPI3
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Values}/{action=word}/{turkish?}");
+                    template: "{controller}/{action}/{id?}");
             });
         }
     }
